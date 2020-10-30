@@ -1,5 +1,6 @@
 $main-color: black;
 $secondary-color: white;
+$google-color: #4285f4;
 
 .custom-button {
   color: $secondary-color;
@@ -19,5 +20,15 @@ $secondary-color: white;
     background-color: $secondary-color;
     color: $main-color;
     border: 1px solid $main-color;
+  }
+
+  &.google-sign-in {
+    background-color: $google-color;
+    color: $secondary-color;
+
+    &:hover {
+      background-color: #357ae8;
+      color: $secondary-color;
+    }
   }
 }
