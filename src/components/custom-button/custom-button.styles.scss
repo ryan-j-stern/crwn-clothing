@@ -15,6 +15,8 @@ $google-color: #4285f4;
   border: none;
   cursor: pointer;
   font-weight: bolder;
+  display: flex;
+  justify-content: center;
 
   &:hover {
     background-color: $secondary-color;
@@ -29,6 +31,18 @@ $google-color: #4285f4;
     &:hover {
       background-color: #357ae8;
       color: $secondary-color;
+    }
+  }
+
+  &.inverted {
+    background-color: $secondary-color;
+    color: $main-color;
+    border: 1px solid $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: $secondary-color;
+      border: none;
     }
   }
 }
