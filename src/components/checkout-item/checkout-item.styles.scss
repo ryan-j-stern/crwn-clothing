@@ -24,6 +24,22 @@
 
   .quantity {
     padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+
+    .value {
+      margin: 0 10px;
+    }
+
+    .arrow {
+      font-size: 18px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
   .remove-button {
