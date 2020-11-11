@@ -1,6 +1,6 @@
-# CRWN CLOTHING E-COMMERCE
+# KNGS CLOTHING E-COMMERCE
 
-CRWN Clothing is not a real company.
+KNGS Clothing is not a real company.
 
 # Description
 
