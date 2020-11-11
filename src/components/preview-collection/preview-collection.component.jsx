@@ -1,10 +1,15 @@
 import React from "react";
 import CollectionItem from "../collection-item/collection-item.component";
+
+import { withRouter, Link } from "react-router-dom";
+
 import "./preview-collection.styles.scss";
 
-const PreviewCollection = ({ title, items }) => (
+const PreviewCollection = ({ title, items, match }) => (
   <div className="collection-preview">
-    <h1 className="title">{title.toUpperCase()}</h1>
+    <Link to={`${match.url}/${title.toLowerCase()}`} className="title">
+      {title.toUpperCase()}
+    </Link>
     <div className="preview">
       {items
         .filter((item, idx) => idx < 4)
@@ -15,4 +20,4 @@ const PreviewCollection = ({ title, items }) => (
   </div>
 );
 
-export default PreviewCollection;
+export default withRouter(PreviewCollection);
